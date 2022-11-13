@@ -4,6 +4,6 @@ project(OODTutorial)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
-include_directories(${OODTutorial_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PRIVATE include)
 
 add_subdirectory(src)
